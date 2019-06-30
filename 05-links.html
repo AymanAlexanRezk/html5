@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Links</title>
+
+  <!-- You can change the default colors, by using CSS -->
+  <!-- <style>
+      a:link, a:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      }
+
+      a:hover, a:active {
+      background-color: red;
+      }
+  </style> -->
+
+</head>
+<body>
+  <h1 id="c4">Links:</h1>
+  <h2>HTML Linking:</h2>
+  <ul>
+    <li>The true power of HTML is the <strong>Linking</strong> ability, 
+      using href ,the hypertext reference.</li>
+    <li>HTML links are hyperlinks.</li>
+    <li>Href attribute specifies the destination address.</li>
+  </ul>
+
+  <p>Note: Without a forward slash at the end of subfolder addresses,<br>
+    you might generate two requests to the server. <br>
+    Many servers will automatically add a forward slash to the end of the address, <br>
+    and then create a new request.</p>
+  
+  <h2>1- External link: </h2>
+  <p> In the same page<br>
+      <a href="http://google.com">Google</a>
+  </p>
+  <p> In a new page<br>
+      <a href="http://google.com" target="_blank">Google</a>
+  </p>
+
+  <h2>2- Internal link: </h2>
+  <p>
+      <a href="/04-typography.html" target="_blank">Typography</a>
+  </p>
+
+  <h2>3- Image Links:</h2>
+  <p>The image is a link. Click on it to go to <strong>w3schools</strong> Website.</p>
+  <a href="https://www.w3schools.com/" target="_blank">
+      <img src="/images/w3schools.png" alt="w3schools tutorial" style="width:75px;height:75px;border:0">
+  </a>
+<hr>
+  <h3 id="c4">HTML Link Colors</h3>
+  <ul>
+      <li>An unvisited link is underlined and blue</li>
+      <li>A visited link is underlined and purple</li>
+      <li>An active link is underlined and red</li>
+  </ul>
+  <p>You can change the default colors, by using CSS</p>
+
+<hr>
+  <h3>The target Attribute</h3>
+  <p>The target attribute specifies where to open the linked document.</p>
+  <ul>
+      <li>_blank - Opens the linked document in a new window or tab</li>
+      <li>_self - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+      <li>_parent - Opens the linked document in the parent frame</li>
+      <li>_top - Opens the linked document in the full body of the window</li>
+      <li>framename - Opens the linked document in a named frame</li>
+  </ul>
+
+  <h3>Create a Bookmark</h3>
+  <a href="#c4">Jump to Links</a> <br>
+  <a href="06-images.html#c4">Jump to Images</a>
+
+</body>
+</html>

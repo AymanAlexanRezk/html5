@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML | Div, span, id and class</title>
+  <style>
+    .card {
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+
+    .enhance {
+      color: yellow;
+      background-color:black;
+    }
+
+    span.note {
+      font-size: 120%;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-header" class="card">
+    <h1>My Website</h1>
+    <p>A site about me</p>
+  </div>
+  <ul id="main-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div id="about" class="card">
+    <h3>About</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit <span class="enhance">expedita quae, molestias magnam recusandae ducimus</span> dolore itaque sit dolores error qui repudiandae aliquam nam? Ad, tempore amet voluptate enim itaque minima quasi quae esse quis incidunt sint provident sapiente aspernatur!</p>
+  </div>
+
+  <div id="contact" class="card">
+    <h3>Contact Me</h3>
+    <ul>
+      <li>Address: 50 Main st, Boston MA</li>
+      <li>Phone: (555) 555-5555</li>
+      <li>Email: me@somethingcool.com</li>
+    </ul>
+  </div>
+
+  <hr>
+  
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+<p>
+	Tip: The class attribute can be used on any HTML element.<br>
+	Note: The class name is case sensitive!
+</p>
+
+<h2>Using The class Attribute in JavaScript</h2>
+<p>Click the button, to hide all elements with the class name "city", with JavaScript:</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+<h1>HTML ID</h1>
+	
+	<p>
+		- Tip: The id attribute can be used on any HTML element.<br>
+		- Note: The id value is case-sensitive.<br>
+		- Note: The id value must contain at least one character, and must not contain whitespace (spaces, tabs, etc.).
+		- An HTML element can only have one unique id that belongs to that single element, while a class name can be used by multiple elements.
+
+	</p>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "بحبك يا كركر";
+}
+</script>
+
+<hr>
+<script>
+	document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+<hr>
+  <div id="footer">
+    <p>Copyright &copy; 2019</p>
+  </div>
+</body>
+</html>

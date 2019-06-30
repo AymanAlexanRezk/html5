@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport for responsive website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Free Web tutorials">
+    <!-- keywords from 8 to 12 keywords -->
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta http-equiv="refresh" content="30">
+    <title>HTML | Meta Tags</title>
+
+    <style>
+	    body {background-color: rgb(48, 49, 49);}
+	    h1, h2, li {color: rgb(255, 255, 255);}
+	    p {color: rgb(255, 255, 255);}
+  	</style>
+
+  	<link rel="stylesheet" href="mystyle.css">
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+    <!-- 
+        The <base> element specifies the base URL and base target for all relative 
+        URLs in a page
+     -->
+    <base href="https://www.w3schools.com/images/" target="_blank">
+</head>
+<body>
+
+<h1>The Title Meta Tag</h1>
+<p> defines the title of the document, and is required in all HTML documents.</p>
+<ul>
+	<li>defines a title in the browser tab</li>
+	<li>provides a title for the page when it is added to favorites</li>
+	<li>displays a title for the page in search engine results</li>
+</ul>
+
+<h2>My Web Page</h2>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>

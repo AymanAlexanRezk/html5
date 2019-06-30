@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>HTML | Lists</title>
+		<!-- List Nav -->
+		<style>
+				nav ul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #333333;
+				}
+				
+				nav li{
+					float: left;
+				}
+				
+				nav li a {
+					display: block;
+					color: white;
+					text-align: center;
+					padding: 16px;
+					text-decoration: none;
+				}
+				
+				nav li a:hover {
+					background-color: #111111;
+				}
+				</style>
+	</head>
+	<body>
+		<h1>HTML Lists:</h1>
+
+		<h2>Navigation Menu</h2>
+		<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+		
+		<nav>
+				<ul class="nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#news">News</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+		</nav>
+		
+		<h2>1- Unordered Lists:</h2>
+		<p>Common used in Navigation</p>
+		<ul style="list-style-type:disc;">
+			<!-- Error when using HTML validator, Style isn't recommended, use CSS instead -->
+			<li>Experienced Business Owner with a demonstrated history of working in the pharmaceuticals industry. </li>
+			<li>Skilled in Software Design, Cascading Style Sheets (CSS), HTML, Front-end Development, and HTML Scripting with excellent experience in Javascript , Bootstrap and NodeJS.</li>
+			<li>PHP backend development with Laravel.</li>
+			<li>Python Django backend development.</li>
+			<li> Strong entrepreneurship professional with a Bachelor's degree focused in Pharmaceutical Sciences from Assuit University - Faculty of Pharmacy. </li>
+		</ul>
+		
+		<h2>2- Ordered List:</h2>
+		<ol type="1"> <!-- start="50" --> <!-- types include: a,A,1,I,i -->
+			<li>Web Development</li>
+			<li>Mobile App Development</li>
+		</ol>
+
+		<h2>3- Description Lists:</h2>
+		<p>
+			- A description list is a list of terms, with a description of each term.<br>
+			- The dl tag defines the description list, <br>
+			- The dt tag defines the term (name), and <br>
+			- The dd tag describes each term:
+		</p>
+
+		<dl>
+		    <dt>Coffee</dt>
+		    <dd>black hot drink</dd>
+		    <dt>Milk</dt>
+		    <dd>white cold drink</dd>
+		</dl>
+
+		<h2>4- Nested Lists:</h2>
+		  <p>Nested lists: circle type by default</p>
+		    <ul>
+			    <li>Item 1</li>
+			    <li>Item 2
+			      <ul>
+			        <li>Nested Item 1</li>
+			        <li>Nested Item 2</li>
+			      </ul>
+			    </li>
+			    <li>Item 3</li>
+			    <li>Item 4</li>
+			</ul>
+
+	</body>
+</html>

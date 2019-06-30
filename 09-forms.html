@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>HTML | Forms</title>
+	</head>
+	<body>
+		<h1>Contact Us</h1>
+		<form action="mailto:info@aymanpharmacy.com" method="post" enctype="text/plain">
+			<label>Your Name:</label><br>
+			<input type="text" name="name"><br>
+			<label>Your Email:</label><br>
+			<input type="email" name="email"><br>
+			<label>Your Message</label><br>
+			<textarea name="message"></textarea><br>
+			<label>Password:</label><br>
+			<input type="Password" name="Password"><br>
+			<input type="submit" name="">
+		</form>
+
+		<h1>Another Form:</h1>
+		  <form action="process.php">
+		    <div>
+		      <!-- 
+		        Matching the for attribute with id will let label be functional
+		        i.e: When you click label content (Name), it will activate input
+		      -->
+		      <label for="name">Name</label><br>
+		      <input type="text" id="name" name="name" value="John Doe">
+		    </div>
+		    <!-- Email -->
+		    <div>
+		      <label for="email">Email</label><br>
+		      <input type="email" id="email" name="email" placeholder="Enter an email">
+		    </div>
+		    <!-- Textarea -->
+		    <div>
+		      <label for="message">Message</label><br>
+		      <textarea name="message" id="message" cols="50" rows="5"></textarea>
+		    </div>
+		    <!-- Select -->
+		    <div>
+		      <label for="gender">Gender</label>
+		      <select name="gender" id="gender">
+		        <option value="male" selected>Male</option>
+		        <option value="female" selected>Female</option>
+		        <option value="other">Other</option>
+		      </select>
+		    </div>
+		    <!-- Number -->
+		    <div>
+		      <label for="age">Age</label><br>
+		      <input type="number" name="age" id="age">
+		    </div>
+		    <!-- Date -->
+		    <div>
+		      <label for="birthdate">Birthdate</label><br>
+		      <input type="date" name="birthdate" id="birthdate">
+		    </div>
+		    <!-- Radio -->
+		    <div>
+		      <label for="membership">Membership</label>
+		      <input type="radio" name="membership" value="simple" id="membership"> Simple
+		      <input type="radio" name="membership" value="standard" id="membership" checked> Standard
+		      <input type="radio" name="membership" value="super" id="membership"> Super
+		    </div>
+		    <!-- Checkbox -->
+		    <div>
+		      <label for="membership">I Like..</label>
+		      <input type="checkbox" name="likes" value="bike" id="likes"> Bike
+		      <input type="checkbox" name="likes" value="car" id="likes"> Car
+		      <input type="checkbox" name="likes" value="boat" id="likes"> Boat
+		    </div>
+		      <!-- Input submit -->
+		      <input type="submit" value="Submit">
+		      <!-- Button submit -->
+		      <!-- <button type="submit">Submit</button> -->
+		      <button type="reset">Reset</button>
+		      <!-- <input type="reset" value="Reset"> -->
+		  </form>
+	</body>
+</html>

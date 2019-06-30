@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Images</title>
+</head>
+<body>
+
+  <h1 id="c5">Images: </h1>
+  <h2>1- Local image: </h2>
+  <img src="/images/sample.jpg" alt="My Image" width="200">
+
+  <h2>2- Remote image: </h2>
+  <!-- unsplash service: you can change hight, width, and keywords -->
+  <img src="https://source.unsplash.com/200x200/?building" alt="My Image 2">
+
+  <h3>Notes:</h3>
+  <ul>
+    <li>We have added "border:0" to prevent IE9 (and earlier) from displaying 
+      a border around the image (when the image is a link).
+    </li>
+    <li>The alt attribute is required for web page validation</li>
+    <li>
+      Always specify the width and height of an image.
+      ( the page might flicker while the image loads )
+    </li>
+    <li>
+        we suggest using the <strong>style attribute</strong>:
+        prevents styles sheets from changing the size of images.
+    </li>
+  </ul>
+  
+  <h2>3- Image Floating:</h2>
+  <ol>
+    <li>Floating to the right:
+        <p><img src="/images/html53.png" alt="html5 icon" style="float:right;width:65px;height:65px;">
+          Lorem, ipsum dolor sit amet consectetur 
+          adipisicing elit. Odit, ipsam aspernatur? Maiores eius soluta corporis expedita aliquam 
+          eaque autem ut quasi qui? Veritatis consequuntur earum doloribus fuga vel ratione veniam.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, similique tenetur aspernatur 
+          omnis fugit cumque natus nihil ratione nam nisi eligendi labore at unde tempore perspiciatis,
+          architecto eius exercitationem alias!</p>
+    </li>
+    <li>Floating to the left:
+        <p><img src="/images/html53.png" alt="html5 icon" style="float:left;width:75px;height:75px;">
+          The image will float to the left of the text. Lorem, ipsum dolor sit amet consectetur 
+          adipisicing elit. Odit, ipsam aspernatur? Maiores eius soluta corporis expedita aliquam 
+          eaque autem ut quasi qui? Veritatis consequuntur earum doloribus fuga vel ratione veniam.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, similique tenetur aspernatur 
+          omnis fugit cumque natus nihil ratione nam nisi eligendi labore at unde tempore perspiciatis,
+          architecto eius exercitationem alias!</p>
+    </li>
+  </ol>
+
+  <h2>4- Image as a Background</h2>
+  <p style="background-image:url('images/w3schools.png');">
+    Lorem, ipsum dolor sit amet consectetur 
+    adipisicing elit. Odit, ipsam aspernatur? Maiores eius soluta corporis expedita aliquam 
+    eaque autem ut quasi qui? Veritatis consequuntur earum doloribus fuga vel ratione veniam.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, similique tenetur aspernatur 
+    omnis fugit cumque natus nihil ratione nam nisi eligendi labore at unde tempore perspiciatis,
+    architecto eius exercitationem alias!
+  </p>
+
+  <h2>5- picture Element:</h2>
+  <p><picture>
+        <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_pink_flowers.jpg">
+        <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_white_flower.jpg">
+        <img src="https://www.w3schools.com/html/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+      </picture>
+  </p>
+  
+  <p>Note: Always specify an img element as the last child element of the picture
+    element. The img element is used by browsers that do not support the picture
+    element, or if none of the source tags matched.</p>
+
+</body>
+</html>
